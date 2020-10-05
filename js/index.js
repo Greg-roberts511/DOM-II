@@ -55,3 +55,23 @@ body.addEventListener("keydown", (e) => {
 });
 
 //8
+
+body.addEventListener("resize", () => {
+  console.log(`height: ${window.innerHeight} `);
+  console.log(`width: ${window.innerWidth}`);
+});
+
+//9
+
+let revCont = document.querySelector(".inverse-content");
+
+revCont.addEventListener("wheel", (e) => {
+  revCont.style.transform = "scale(1.3)";
+  revCont.style.transition = "2s";
+});
+
+//10
+
+let navLinks = document.querySelectorAll(".nav-link");
+
+navLinks.forEach.addEventListener("select", (e) => {});
